@@ -1,0 +1,17 @@
+//Construa um programa que imprime a soma de todos os valores positivos digitados pelo usuário até que ele digite um número negativo.
+#include<stdio.h>
+int main(){
+  int num;
+  int soma=0;
+  do{
+    printf("Digite um numero: ");
+    scanf("%d",&num);
+    if(num>0){
+      soma=soma+num;
+      printf("A soma é: %d\n",soma);
+    } else{
+      printf("Voce digitou um numero negativo\n");
+    }
+  }
+    while(num>0);
+}
