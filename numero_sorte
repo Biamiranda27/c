@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include<stdlib.h>
+#include<time.h>
+int main() {
+  srand(time(NULL));
+  int numero, cont =0;
+  int sorte = rand()%101;
+
+  do{
+    printf("Digite um numero de 0 a 100: ");
+    scanf("%d", &numero);
+    cont++;
+    if(numero == sorte){
+      printf("Parabens, voce acertou depois de %d tentativas\n", cont);
+    }
+     else if(numero>sorte){
+      printf("O seu numero é maior\n"); 
+    } else{
+      printf("O seu numero é menor\n");
+      getchar();
+    }
+  }
+    while(numero!=sorte);
+    }
