@@ -1,0 +1,15 @@
+//Faça um programa que recebe um número inteiro positivo e imprime o fatorial deste número.Lembrando que 4! (fatorial de 4) é 4x3x2x1 = 24
+#include<stdio.h>
+int main(){
+  int fat, n;
+  do{
+    printf("Digite um numero: ");
+    scanf("%d", &n);
+for(fat=1;n>1;n=n-1){
+      fat=fat*n;
+}
+    printf("%d\n", fat);
+    getchar();
+  }
+    while(n>0);
+    }
