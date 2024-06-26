@@ -1,0 +1,11 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<time.h>
+int main(){
+  srand(time(NULL));
+  int valores[100];
+  for(int indice=0; indice<=99; indice++){
+    valores[indice]=rand()%101;
+    printf("%d\n", valores[indice]);
+  }
+}
