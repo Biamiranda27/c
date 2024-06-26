@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main(){
+  int a[6] = {1,0,5,-2,-5,7};
+  int soma, quadrado;
+  soma = a[0] + a[1] + a[5];
+  printf("A soma é %d\n", soma);
+  a[3] = 100;
+  quadrado = (a[2] *a[2]) + (a[4] * a[4]);
+  printf("A soma do quadrado é %d\n", quadrado);
+  printf("0- %d\n", a[0]);
+  printf("1- %d\n", a[1]);
+  printf("2- %d\n", a[2]);
+  printf("3- %d\n", a[3]);
+  printf("4- %d\n", a[4]);
+  printf("5- %d\n", a[5]);
+}
