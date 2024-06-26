@@ -1,0 +1,18 @@
+#include<stdio.h>
+int main(){
+  int numeros[10];
+  int indice;
+  for(indice = 0; indice<=9; indice++){
+    printf("Digite o valor do vetor[%d]:\n ", indice);
+    scanf("%d", &numeros[indice]);
+    getchar();
+  }
+    for(indice = 0; indice<=9; indice++){
+    if(numeros[indice]<0){
+      numeros[indice]=0;
+    }
+    }
+  for(indice = 0; indice<=9; indice++){
+     printf("O valor é %d\n", numeros[indice]);
+  }
+}
