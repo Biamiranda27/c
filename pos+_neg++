@@ -1,0 +1,21 @@
+//Faça um programa que preencha um vetor com 10 números reais, calcule e mostre a quantidade de números negativos e a soma dos números positivos desse vetor.
+#include<stdio.h>
+int main(){
+  int tam =10;
+  int negativo=0;
+  int soma=0;
+  int vetor[tam];
+  for( int num=0;num<tam;num++){
+    printf("Digite o numero do vetor[%d]:\n ",num);
+    scanf("%d", &vetor[num]);
+  }
+  for( int num=0;num<tam;num++){
+    if(vetor[num]<0){
+      negativo++;
+    } else{
+      soma=soma+vetor[num];
+    }
+  }
+  printf("Esse vetor possui %d negativos\n", negativo);
+   printf("A soma dos positivos é: %d\n", soma);
+}
