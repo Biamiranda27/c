@@ -1,0 +1,18 @@
+//Faça um programa que receba do usuário valores inteiros para dois vetores, A e B, com 10 números inteiros cada. Crie um novo vetor denominado C calculando C = A - B. Mostre na tela os dados do vetor C.
+#include <stdio.h>
+int main(){
+  int tam=10, a, b, c=0;
+  int vet[tam];
+  int vetor[tam];
+  for(a=0;a<6;a++){
+    printf("\nDigite o vetor[%d]: ", a);
+    scanf("%d", &vet[a]);
+  }for(b=0;b<6;b++){
+    printf("\nDigite o vetor[%d]: ", b);
+    scanf("%d", &vetor[b]);
+  } 
+ for(a=0,b=0;a<6,b<6;a++,b++){
+   c=vet[a]-vetor[b];
+  printf("\nValor de c é: %d - %d = %d\n",vet[a],vetor[b], c);
+ }
+}
