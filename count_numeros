@@ -1,0 +1,22 @@
+#include<stdio.h>
+#include <stdlib.h>
+#include <time.h>
+int main(){
+  srand(time(NULL));
+  int tam=100;
+  int num;
+  int count=0;
+  int vetor[tam];
+  for(int indice =0; indice<tam; indice++){
+  vetor[indice] = rand() %11;
+  printf("%d\n", vetor[indice]);
+  }
+  for(int indice =0; indice<tam; indice++){
+    printf("Digite um numero: ");
+    scanf("%d", &count);
+    do{
+      count++;
+      printf("Esse numero aparaeceu %d vezes\n", count);
+    } while(num==vetor[indice]);
+  }
+  }
