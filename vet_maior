@@ -1,0 +1,16 @@
+//Escreva um programa que leia 10 números inteiros e os armazene em um vetor. Imprima o vetor, o maior elemento e a posição que ele se encontra.
+#include<stdio.h>
+int main(){
+  int tam=10, maior=0, i, posicao=0;
+  int vetor[tam];
+  for( i=0; i<tam; i++){
+  printf("Digite o vetor[%d]: ", i);
+    scanf("%d", &vetor[i]);
+    }
+   for( i=0; i<tam; i++ ){
+     if(vetor[i]>maior && vetor[i]>posicao){
+       maior=vetor[i];
+       posicao++;
+     }
+   }printf("O maior vetor é o numero %d na posicao %d\n", maior, posicao);
+}
