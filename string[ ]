@@ -1,0 +1,17 @@
+//Crie um programa que recebe uma string e um caractere, e apague (substitua por ‘ ’ (espaço)) todas as ocorrências desse caractere na string.
+#include<stdio.h>
+int main(){
+  char string[50];
+  char caracter;
+  char b = ' ';
+  int a;
+  printf("Digite uma string: ");
+  fgets(string,50,stdin);
+  printf("Digite um caracter: ");
+  scanf("%c", &caracter);
+  for(a=0;a<49;a++){
+    if(string[a]==caracter){
+      string[a]=b;
+    }
+  } puts(string);
+}
