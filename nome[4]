@@ -1,0 +1,11 @@
+//Receber um nome e imprimir as 4 primeiras letras do nome
+#include<stdio.h> 
+int main(){
+  char nome[30], indice;
+  printf("Digite o seu nome: ");
+  fgets(nome,30,stdin);
+  printf("As quatro primeiras letras do seu nome sao:\n");
+  for(indice=0;indice<4;indice++){
+    printf("%c\t", nome[indice]);
+  }
+}
