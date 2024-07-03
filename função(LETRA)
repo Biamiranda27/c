@@ -1,0 +1,12 @@
+#include <stdio.h>
+#include<ctype.h>
+char caracter(char carac){
+  return toupper(carac);
+}
+int main(){
+  char letra;
+  printf("Digite um caracter: ");
+  scanf("%c", &letra);
+  printf("%c", caracter(letra));
+ 
+}
